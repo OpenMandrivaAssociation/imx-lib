@@ -14,7 +14,7 @@ Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libusb.info
-Source0:	%{name}-%{version}-%{micro}.tar.gz
+Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}-%{micro}.tar.gz
 
 %description
 Platform specific libraries for imx platform
