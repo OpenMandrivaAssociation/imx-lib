@@ -16,6 +16,7 @@ Group:		System/Libraries
 Url:		http://libusb.info
 Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}-%{micro}.tar.gz
 BuildRequires:	kernel-sabreboard-devel
+BuildRequires:	kernel-headers >= 3.15.10
 
 %description
 Platform specific libraries for imx platform
