@@ -15,6 +15,7 @@ License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libusb.info
 Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}-%{micro}.tar.gz
+BuildRequires:	kernel-sabreboard-devel
 
 %description
 Platform specific libraries for imx platform
