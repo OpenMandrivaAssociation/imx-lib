@@ -10,7 +10,7 @@
 Summary:	Platform specific libraries for imx platform
 Name:		imx-lib
 Version:	3.10.53
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libusb.info
@@ -35,8 +35,21 @@ group:		System/Libraries
 Libcec library for imx6 platform
 
 %package -n	%{libpxp}
-summary:	platform specific i.mx6 libraries
+summary:	Platform specific i.mx6 libraries
 group:		System/Libraries
+
+%description -n	%{libpxp}
+PXP library for imx6 platform
+
+%package	common
+summary:	Platform specific i.mx6 libraries
+group:		System/Libraries
+Requires:	%{libipu} = %{EVRD}
+Requires:	%{libpxp} = %{EVRD}
+Requires:	%{libcec} = %{EVRD}
+
+%description	common
+PXP library for imx6 platform
 
 %description -n	%{libpxp}
 PXP library for imx6 platform
@@ -74,3 +87,5 @@ rm -f %{buildroot}/%{_libdir}/*.a
 %{_libdir}/libcec.so
 %{_libdir}/libipu.so
 %{_libdir}/libpxp.so
+
+%files common
