@@ -10,7 +10,7 @@
 Summary:	Platform specific libraries for imx platform
 Name:		imx-lib
 Version:	3.10.53
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libusb.info
