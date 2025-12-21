@@ -15,6 +15,7 @@ License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://libusb.info
 Source0:	http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/%{name}-%{version}-%{micro}.tar.gz
+BuildRequires:	make
 BuildRequires:	kernel-headers = 1:3.10.53-2
 
 %description
